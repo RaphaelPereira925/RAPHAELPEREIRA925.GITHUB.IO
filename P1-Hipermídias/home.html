@@ -7,44 +7,40 @@
     <title>Início</title>
     <link rel="stylesheet" type="text/css" href="home.css">
 </head>
-<body>
-  <header class="Bloco1">
-    <div class="imgcab">
-      <img src="PerspectaSF1.png" alt="Perspecta Consultoria" usemap="#Perspecta" width="160" height="120">
-      <map name="Perspecta">
-        <area shape="rect" coords="4, 3, 1732, 1254" />
-      </map>
-    </div>
-    <div class="sup">
-      <ul class="lista1">
-        <li>Home</li>
-        |
-        <li>Gaelige</li>
-        |
-        <li>Sitemap</li>
-        |
-        <li>A-Z</li>
-        |
-        <li>Contact</li>
-        |
-        <li>Text: A A A</li>
-      </ul>
-    </div>
-    <div class="buscador">
-      <a href="#"><button>Find a School</button></a>
-      <input type="text" name="escola" placeholder="Site Search" />
-      <a href="#"><button>OK</button></a>
-      <br>
-      <a href="#">Advanced Search</a>
-    </div>
-    <div class="inf">
-      <ul class="lista2">
-        <li>Parents</li>
-        <li>Teachers</li>
-        <li>Schools & Colleges</li>
-        <li>Students</li>
-      </ul>
+<body id="Main"> <!-- Criei um id Main para inicializar meu grid -->
+  <header>
+    <div class="mainHeader"> <!-- Criei uma classe para todo o header para criar o grid e ajudar com o posicionamento dos elementos. -->
+      <div class="cabeçalho1">
+        <ul>
+          <li class="list1"><a href="#">Home</a></li>
+          <li class="list1"><a href="#">Gaelige</a></li>
+          <li class="list1"><a href="#">Sitemap</a></li>
+          <li class="list1"><a href="#">Sitemap</a></li>
+          <li class="list1"><a href="#">A-Z</a></li>
+          <li class="list1"><a href="#">Contact</a></li>
+          <li class="list1"><a href="#">Text: A A A</a></li>
+        </ul>
+        <div class="busca">
+          <button>Find a School</button>
+          <input type="text" name="escola" placeholder="Site Search" />
+          <button>OK</button>
+          <br>
+          <a class="A" href="#">Advanced Search</a>
+        </div>
+      </div>
+      <div class="imgcab">
+        <img src="PerspectaSF1.png" alt="Perspecta" width="160" height="120"/>
+      </div>
+      <div class="cabeçalho2">
+        <ul>
+          <li class="lista2"><a class="linklist2" href="#">Parents</a></li>
+          <li class="lista2"><a class="linklist2" href="#">Teachers</a></li>
+          <li class="lista2"><a class="linklist2" href="#">Schools & Colleges</a></li>
+          <li class="lista2"><a class="linklist2" href="#">Students</a></li>
+        </ul>
+      </div>
     </div>
   </header>
+
 </body>
 </html>

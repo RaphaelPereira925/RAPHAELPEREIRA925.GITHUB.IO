@@ -1,24 +1,72 @@
 /*    Cabeçalho    */
 
-body{
-  width:80%;
-  margin-left:10%;
+#Main{
+  display: grid; /* Aqui eu defini que vou organizar o layout com grid, como se fosse um inicializador*/
+  grid-template-areas: "Header";/* Aqui eu defini as áreas que quero trabalhar com o meu grid*/
+  margin: 0px;
+  padding: 0px;
 }
-
-.Bloco1{
-  display: grid;
-  background-color: grey;
+/*    Instanciando os grids templates   */
+.mainHeader{
+  grid-area: header; /*Instanciei os elementos criados no html no CSS*/
+  grid-auto-rows: 2px; /* Defini a porcentagem de tamanho que os elementos do grid ocuparão na tela*/
+}
+header{
+  background-color: skyblue;
+}
+.cabeçalho1{
+  float: right;
+  margin-right: 75px;
+}
+.list1{
+  padding-left: 12px;
+}
+.busca{
+  float: right;
+  padding: 4px;
+}
+button{
+  background-color: #CDC9C9;
+  border-bottom-style: groove;
+  box-shadow: 5px 5px 5px;
+}
+.A{
+  float: right;
+  margin-right: 3px;
+}
+.alink{
+  float: right;
+  margin-top: 6px;
 }
 .imgcab{
-  height: 150px;
-  margin-top: 6%;
-  margin-left: 6%;
-  margin-right: 120%;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 60px;
+  display: inline-block;
 }
-.lista1 :hover{
-  height: 150px;
-  margin-top: 6%;
-  margin-left: 60%;
-  margin-right: 60%;
-  display: inline-inline-block;
+.cabeçalho2{
+  float: right;
+  margin-right: 75px;
+  text-decoration: none;
+  margin-top: -65px;
+}
+.lista2{
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+	padding: 4px;
+	margin-bottom: 10px;
+	width: 176px;
+  border: 2px solid black;
+  color: black;
+}
+.linklist2{
+  text-decoration: none;
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+}
+a{
+  color: black;
 }
