@@ -1,36 +1,59 @@
-/*    Cabeçalho    */
-
-#Main{
+*{
+  padding: 0; /*Zerei as margens*/
+  margin:0;
+}
+#Main{ /*Criei uma estrutura pai para o meu grid*/
   display: grid; /* Aqui eu defini que vou organizar o layout com grid, como se fosse um inicializador*/
-  grid-template-areas: "Header";/* Aqui eu defini as áreas que quero trabalhar com o meu grid*/
-  margin: 0px;
-  padding: 0px;
+  grid-template-rows: 30vh 100vh 20vh; /*Defini o tamanho dos elementos na tela*/
+  grid-template-areas: "header header header" "nav section aside" "footer footer footer";/* Aqui eu defini as áreas que quero trabalhar com o meu grid*/
+  grid-template-columns: 20% 1fr 22%; /*COmo se fosse o espaçamento das colunas do meu grid*/
+  font-family: serif;
 }
 /*    Instanciando os grids templates   */
 .mainHeader{
-  grid-area: header; /*Instanciei os elementos criados no html no CSS*/
-  grid-auto-rows: 2px; /* Defini a porcentagem de tamanho que os elementos do grid ocuparão na tela*/
+  grid-area: header;
+  background: skyblue;
 }
-header{
-  background-color: skyblue;
+.mainNav{
+  grid-area: nav;
+  background: white;
 }
+.mainSection{
+  grid-area: section;
+  background: white;
+}
+.mainAside{
+  grid-area: aside;
+  background: white;
+}
+.mainFooter{
+  grid-area: footer;
+  background: #00008B;
+}
+/*    Cabeçalho   */
+
 .cabeçalho1{
   float: right;
   margin-right: 75px;
+  margin-top: 6px;
 }
-.list1{
-  padding-left: 12px;
+.Cablista1{
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-right : 2px solid black;
 }
 .busca{
   float: right;
   padding: 4px;
+  margin-top: 6px;
 }
 button{
   background-color: #CDC9C9;
   border-bottom-style: groove;
   box-shadow: 5px 5px 5px;
 }
-.A{
+.cabA{
   float: right;
   margin-right: 3px;
 }
@@ -41,27 +64,26 @@ button{
 .imgcab{
   height: auto;
   margin-left: 100px;
-  margin-top: 60px;
+  margin-top: 25px;
   display: inline-block;
 }
 .cabeçalho2{
   float: right;
   margin-right: 75px;
   text-decoration: none;
-  margin-top: -65px;
+  margin-top: -25px;
 }
-.lista2{
-  background-color: white;
-  text-align: center;
-  display: inline-block;
-	padding: 4px;
-	margin-bottom: 10px;
-	width: 176px;
-  border: 2px solid black;
-  color: black;
+.linklist2:hover{
+  background-color: #F5F5F5;
 }
 .linklist2{
+  border: 2px solid black;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: 2.5px;
+  background: white;
   text-decoration: none;
+  color: black;
 }
 ul li{
   display: inline-block;
@@ -69,4 +91,37 @@ ul li{
 }
 a{
   color: black;
+}
+
+/*    Rodapé    */
+
+hr{
+  margin-left: 100px;
+  margin-right: 75px;
+}
+.foolist1{
+  float: left;
+  margin-left: 100px;
+  font-size: 12px;
+}
+.flist1{
+  padding-left: 4px;
+  padding-right: 7px;
+  border-right : 2px solid black;
+}
+.linktopo{
+  font-size: 12px;
+  padding-left: 80px;
+  padding-right: 70px;
+}
+.footxt{
+  float: right;
+  margin-left: 75px;
+  font-size: 12px;
+}
+.fP{
+  padding-left: 4px;
+  padding-right: 7px;
+  border-right : 2px solid black;
+  font-size: 12px;
 }
