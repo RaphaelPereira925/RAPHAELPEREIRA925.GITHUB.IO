@@ -189,6 +189,7 @@ a{
   background: #F5F5F5;
   margin-left: 20px;
   margin-right: 20px;
+  display: flex;
 }
 .secH{
   float: left;
@@ -198,11 +199,12 @@ a{
 }
 .secMore{
   float: right;
-  margin-right: 30px;
+  margin-right: 40px;
   margin-top: 5px;
+  font-size: 12px;
 }
 .secCont1{
-  background: skyblue;
+  background: #F5F5F5;
   margin-left: 20px;
   margin-top: 20px;
   float: left;
@@ -220,17 +222,76 @@ a{
   font-size: 12px;
   margin-left: 8px;
 }
-.secDate2{
-  font-size: 12px;
-  margin-left: 20px;
-  margin-top: 30px;
-
-}
 .secP{
   margin-left: 123px;
   font-size: 14px;
 }
-
+.secCont2{
+  float: left;
+}
+.secDivDate{
+  float: left;
+  margin-top: 20px;
+  margin-left: -112px;
+}
+.secDivLink{
+  float: left;
+  text-align: left;
+  margin-left: 140px;
+  margin-top: -60px;
+}
+.secDate2{
+  font-size: 12px;
+}
+.secLink{
+  font-size: 12px;
+  margin-left: 8px;
+  float: left;
+}
+.secCont3{
+  background: #F5F5F5;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 544px;
+  height: 100px;
+}
+.secH2{
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.secP2{
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 70px;
+  float: left;
+  font-size: 12px;
+}
+.secSecA2{
+  float: right;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.secDivTime{
+  float: left;
+  margin-top: 40px;
+}
+.secTime{
+  margin-left: 20px;
+  margin-left: -100px;
+  font-size: 12px;
+}
+.secDivFim{
+  float: left;
+  margin-top: -58px;
+  margin-left: 170px;
+}
+.secLinkFim{
+  font-size: 12px;
+}
 /*    Rodapé    */
 
 hr{
